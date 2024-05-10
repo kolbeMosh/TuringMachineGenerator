@@ -1,0 +1,10 @@
+a
+B
+d
+a0a0R
+a1b1R
+b0c0R
+c1c1R
+c0b0R
+b1a1R
+aBdBR
