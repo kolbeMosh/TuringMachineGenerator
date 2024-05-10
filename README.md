@@ -1,6 +1,8 @@
 # Universal Turing Machine Generator
 Generate Cool Gifs of Turing Machines using this project
 
+## What is does
+
 Here is a turing machine render generated using this code:  
 
 ![](https://github.com/kolbeMosh/TuringMachineGenerator/blob/master/mod3TM.gif)
