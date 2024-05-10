@@ -21,11 +21,11 @@ Here is an example of that:
 [Graphviz](https://graphviz.readthedocs.io/en/stable/manual.html#installation): 
 
 ```
-  pip install graphviz
+pip install graphviz
 ```
 [Pillow](https://pillow.readthedocs.io/en/stable/installation/basic-installation.html)
 ```
-  pip install Pillow
+pip install Pillow
 ```
 
 ##### How to Format your TM:
@@ -58,7 +58,7 @@ lines 4-end are:
 
 Use the following syntax to run the program
 ```
-  python main.py [PATH/TO/TM] [Input you want to test]
+python main.py [PATH/TO/TM] [Input you want to test]
 ```
 
 here is an example using the input displayed in the gif
