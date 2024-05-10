@@ -1,6 +1,5 @@
 # Universal Turing Machine Generator
 
-## What is does
 Generate Cool Gifs of Turing Machines using this project
 
 Here is a turing machine render generated using this code:  
@@ -14,4 +13,15 @@ This program can also generate static images in your desired format
 Here is an example of that:  
 
 ![](https://github.com/kolbeMosh/TuringMachineGenerator/blob/master/mod3TM.svg)
+
+## How to Run it
+
+##### Necessary Python Packages
+
+```
+{
+  pip install graphviz
+  pip install Pillow
+}
+```
 
