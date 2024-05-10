@@ -1,4 +1,4 @@
-# Universal Turing Machine Generator
+# Turing Machine Generator
 
 Generate Cool Gifs of Turing Machines using this project
 
