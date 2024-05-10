@@ -19,9 +19,7 @@ Here is an example of that:
 ##### Necessary Python Packages
 
 ```
-{
   pip install graphviz
   pip install Pillow
-}
 ```
 
