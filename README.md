@@ -1,7 +1,7 @@
 # Universal Turing Machine Generator
-Generate Cool Gifs of Turing Machines using this project
 
 ## What is does
+Generate Cool Gifs of Turing Machines using this project
 
 Here is a turing machine render generated using this code:  
 
