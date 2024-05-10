@@ -13,7 +13,8 @@ import os
 
 def main() -> bool:
     # UnivTM props
-    TMDestDir = f'InterMediateFiles/{currentTime()}'
+    intermediateDir = 'InterMediateFiles'
+    TMDestDir = f'{intermediateDir}/{currentTime()}'
     TMFile = sys.argv[1]
     TMInput = sys.argv[2]
 
@@ -23,15 +24,22 @@ def main() -> bool:
     movesMade = None # List of moves made by the TM
 
     # Params for convertToGif
-    gifDestDir = f'Renders/animated'
-    staticDestDir = f'Renders/static'
+    rendersDir = f'Renders'
+    gifDestDir = f'{rendersDir}/animated'
+    staticDestDir = f'{rendersDir}/static'
     gifDuration = 1000
     fileName = str(currentTime())
 
     # Mostly not necessary (bc destDir is based on time) 
     # but might help prevent runtime errors ¯\_(ツ)_/¯
+    if not os.path.exists(intermediateDir):
+        os.makedirs(intermediateDir)
+
     if not os.path.exists(TMDestDir):
         os.makedirs(TMDestDir)
+    
+    if not os.path.exists(rendersDir):
+        os.makedirs(rendersDir)
 
     if not os.path.exists(gifDestDir):
         os.makedirs(gifDestDir)
