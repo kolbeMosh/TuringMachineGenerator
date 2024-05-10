@@ -18,8 +18,12 @@ Here is an example of that:
 
 ##### Necessary Python Packages
 
+[Graphviz](https://graphviz.readthedocs.io/en/stable/manual.html#installation): 
+
 ```
   pip install graphviz
+```
+```
   pip install Pillow
 ```
 
