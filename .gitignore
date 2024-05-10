@@ -1,1 +1,6 @@
-__pycache__
+/__pycache__
+/Renders/animated/
+/Renders/static/
+/IntermediateFiles/
+
+!.gitignore

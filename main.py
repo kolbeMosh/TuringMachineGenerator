@@ -22,14 +22,23 @@ def main() -> bool:
     TMAccepted = None # Whether the TM accepted the input or not
     movesMade = None # List of moves made by the TM
 
-    # 
+    # Params for convertToGif
     gifDestDir = f'Renders/animated'
     staticDestDir = f'Renders/static'
+    gifDuration = 1000
+    fileName = str(currentTime())
 
-    # Mostly not necessary(bc destDir is based on time) 
+    # Mostly not necessary (bc destDir is based on time) 
     # but might help prevent runtime errors ¯\_(ツ)_/¯
     if not os.path.exists(TMDestDir):
         os.makedirs(TMDestDir)
+
+    if not os.path.exists(gifDestDir):
+        os.makedirs(gifDestDir)
+
+    if not os.path.exists(staticDestDir):
+        os.makedirs(staticDestDir)
+
 
     TM = UTM(TMFile)
 
@@ -41,13 +50,13 @@ def main() -> bool:
     # Uncomment this line to generate a static version of the file
     # you can change the filetype to any Pillow supported type 
     # supported types: https://pillow.readthedocs.io/en/stable/handbook/image-file-formats.html
-    TD(movesMade[0][0], str(currentTime()), staticDestDir, 'svg')
+    TD(movesMade[0][0], fileName, staticDestDir, 'svg')
 
     # Generates Intermediate State Files
     for move in movesMade:
         TD(move[0], move[1], TMDestDir, 'png', move[2])
 
-    CTG(TMDestDir, gifDestDir, str(currentTime()), 1000).convert()
+    CTG(TMDestDir, gifDestDir, fileName, gifDuration).convert()
 
     # Deletes Intermediate files to clean up space
     dir = os.scandir(TMDestDir)
