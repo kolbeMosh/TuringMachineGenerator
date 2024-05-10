@@ -23,6 +23,7 @@ Here is an example of that:
 ```
   pip install graphviz
 ```
+[Pillow](https://pillow.readthedocs.io/en/stable/installation/basic-installation.html)
 ```
   pip install Pillow
 ```
